@@ -10,6 +10,25 @@ namespace Palindromo
     {
         static void Main(string[] args)
         {
+
+
+
+
+
         }
+
+        bool checkPalindrome(string inputString)
+        {
+            int len = inputString.Length;
+            for (int i = 0; i < len; i++)
+            {
+                if (inputString[i] != inputString[len - 1 - i])
+                    return false;
+
+            }
+            return true;
+        }
+        
+
     }
 }
